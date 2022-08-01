@@ -29,17 +29,32 @@
 	<body data-preloader="2">
 		
 		<header>
-			<nav class="navbar navbar-absolute"><!-- add 'navbar-dark/navbar-grey/navbar-transparent/navbar-transparent-dark' -->
+			<!-- navbar -->
+			<nav class="navbar navbar-dark navbar-absolute navbar-fixed">
 				<div class="container">
 					<a class="navbar-brand" href="../index.html">
-						<h5>Ryan Stinebaugh Designs</h5>
+						<h5>Ryan Stinebaugh</h5>
 					</a>
-					<ul class="nav"><!-- add 'dropdown-dark/dropdown-grey/dropdown-transparent/dropdown-transparent-dark' -->
-						 
-						
-                        <!-- Basic link -->
+					<ul class="nav">						 
+
+						<!-- Sub Dropdown -->
+						<li class="nav-item nav-dropdown">
+							<a class="nav-link">Portfolio</a>
+		        	<ul class="dropdown-menu bg-dark">
+								<li class="nav-item">
+									<a href="ProductDevelopment.html">Product Development</a>
+								</li>
+								<li class="nav-item">
+									<a href="EngineeringDesign.html">Engineering Design</a>
+								</li>
+								<li class="nav-item">
+									<a href="UI-UX.html">UI / UX</a>
+								</li>
+							</ul>
+						</li>
+						<!-- Basic link -->
 						<li class="nav-item">
-							<a class="nav-link" href="../index.html">See my other work</a>
+							<a class="nav-link" href="Contact.html">Contact</a>
 						</li>
 						
 					</ul><!-- end nav -->
@@ -48,7 +63,8 @@
 			            <span class="lines"></span>
 			        </button><!-- toggle button will show when screen resolution is less than 992px -->
 				</div><!-- end container -->
-			</nav><!-- end navbar -->
+			</nav>
+			<!-- end navbar -->
 		</header>
 
 		<!-- Scroll to top button -->
@@ -58,164 +74,16 @@
 		<!-- end Scroll to top button -->
 
 		<!-- Home section -->
-		<div class="section-xl bg-image parallax" style="background-image: url(../images/fusiondark5.png)">
+		<div class="section-xl bg-image parallax" data-bg-src="../images/splash.jpg">
 			<div class="bg-black-01">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-10 col-md-8">
 							<div class="margin-top-50 margin-bottom-50">
 								<h1 class="display-4 font-weight-bold text-white">Roto Mouse Bungee</h1>
-								
 								<ul class="list-horizontal-dash">
 									<li class="text-white-09 font-weight-normal">Clean Aesthetic, Unrivaled Performance</li>
 								</ul>
-								<div>
-								<div id='product-component-1590201769513'></div>
-									<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'ryan-stinebaugh-designs.myshopify.com',
-      storefrontAccessToken: '25089c0685e682f8b89ada30f92e13f7',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '2208132989057',
-        node: document.getElementById('product-component-1590201769513'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        },
-        "text-align": "left"
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        "background-color": "#ec2f2f",
-        ":focus": {
-          "background-color": "#d42a2a"
-        },
-        "border-radius": "5px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      }
-    },
-    "buttonDestination": "checkout",
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Buy Now"
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        "background-color": "#ec2f2f",
-        ":focus": {
-          "background-color": "#d42a2a"
-        },
-        "border-radius": "5px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        "background-color": "#ec2f2f",
-        ":focus": {
-          "background-color": "#d42a2a"
-        },
-        "border-radius": "5px"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Checkout"
-    },
-    "popup": false
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#ec2f2f",
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        ":focus": {
-          "background-color": "#d42a2a"
-        }
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-							</div>	
 							</div>
 						</div>
 					</div><!-- end row -->
@@ -225,44 +93,46 @@
 		<!-- end Home section -->
 
 		<!-- About section -->
-		<div class="section bg-grey-lighter">
+		<div id="features" class="section bg-dark">
 			<div class="container">
 				<div class="row align-items-center col-spacing-50">
-					<div class="col-12 col-lg-8">
-						<img src="../images/Desk_Render2.png" alt="">
-					</div>
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-lg-5">
 						<h2 class="font-weight-normal"> The Last Mouse Bungee You'll Ever Need</h2>
 						<p>If you've used a standard mouse bungee before, you'll be all too familiar with that extra pulling sensation  you feel when you're approaching the edges of your mousepad. That extra tension has caused you to whiff shots, misclick, or rip your bungee out of place. My frustration with existing bungees led me to design a solution to end all of the annoyances that come with using a wired mouse.</p>
 
 					</div>
+					<div class="col-12 col-lg-7">
+						<img src="../images/disassembled.jpg" alt="">
+					</div>
+					
 				</div><!-- end row -->
 			</div><!-- end container -->
 		</div>
 		<!-- end About section -->
+
 		<!-- Features section -->
-		<div class="section-lg bg-grey-lighter padding-top-0">
+		<div class="section-lg bg-dark-lightest padding-top-20">
 			<div class="container">
 				<div class="row col-spacing-40 text-center">
 					<div class="col-12 col-lg-4 icon-5xl">
-						<div class="bg-white padding-30 box-shadow-with-hover border-radius hover-float">
-							<i class="ti-dashboard text-black-09 margin-top-20"></i>
+						<div class="bg-dark padding-30 box-shadow-with-hover border-radius hover-float">
+							<i class="ti-dashboard text-white-09 margin-top-20"></i>
 							<h5 class="font-weight-normal margin-top-20">Consistent Performance</h5>
 							<p class="margin-bottom-20">Reduces the feeling of cable drag, while ensuring the cable bends consistently even at higher speeds. </p>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4 icon-5xl">
-						<div class="bg-white padding-30 box-shadow-with-hover border-radius hover-float">
-							<i class="ti-settings text-black-09 margin-top-20"></i>
+						<div class="bg-dark padding-30 box-shadow-with-hover border-radius hover-float">
+							<i class="ti-settings text-white-09 margin-top-20"></i>
 							<h5 class="font-weight-normal margin-top-20">Customizablility</h5>
 							<p class="margin-bottom-20"> With plenty of different cable management options, The Roto Bungee ensures a comfortable feel.</p>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4 icon-5xl">
-						<div class="bg-white padding-30 box-shadow-with-hover border-radius hover-float">
-							<i class="ti-package text-black-09 margin-top-20"></i>
+						<div class="bg-dark padding-30 box-shadow-with-hover border-radius hover-float">
+							<i class="ti-package text-white-09 margin-top-20"></i>
 							<h5 class="font-weight-normal margin-top-20">Free Shipping</h5>
-							<p class="margin-bottom-20"> We offer free shipping anywhere in the Unites States. Allow 2-3 business days for processing.</p>
+							<p class="margin-bottom-50"> When in stock, we offer free shipping anywhere in the Unites States.</p>
 						</div>
 					</div>
 				</div><!-- end row -->
@@ -270,235 +140,46 @@
 		</div>
 		<!-- end Features section -->
 
-		<!-- About section -->
-		<div class="section bg-grey-lighter padding-top-0">
-			<div class="container">
-				<div class="row align-items-center col-spacing-50">
-					
-					<div class="col-12 col-lg-6">
-						<h2 class="font-weight-normal">Full Range of Motion</h2>
-						<p>The premium bearing inside of the Roto allows for a constant glide of the mouse cable, which provides a consistent feel anywhere on your mousepad. The customizable tip allows you to fine tune how you'd like your cord to behave when your mouse approaches the top edge. The built in cable management channels allow you to keep a clean, organized look on your desk.
-						</p>
-					</div>
-					<div class="col-12 col-lg-6">
-						<img src="../images/bungee.gif" alt="">
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end About section -->
-		
-		
-		
-		<!-- About section -->
-		<div class="section bg-grey-lighter padding-top-0">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2 class="font-weight-normal">Easy Setup</h2>
-					<div class="divider-zigzag divider-zigzag-color-black-07">
-						<span></span><span></span><span></span>
+		<!-- Testimonial -->
+		<div id="video" class="section bg-image" data-bg-src="../images/top.jpg">
+			<div class="container text-center">
+				<div class="margin-bottom-70">
+					<div class="row text-center">
+						<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<h2 class="font-weight-normal">See Roto in Action</h2>
+						</div>
 					</div>
 				</div>
 				
-				<div class="row align-items-center col-spacing-50 padding-top-0">
-					<div class="col-12 col-lg-6">
-						<a class="heading-uppercase lightbox-image hyperlink-8" href="../images/Desk_Bungee_Top.png" data-image-title="Installation Instructions">
-						<img src="../images/Desk_Bungee_Top.png" alt=""></a>
-					</div>
-					<div class="col-12 col-lg-6">
-						<a class="heading-uppercase lightbox-image hyperlink-8" href="../images/Tip_Customization.png" data-image-title="Installation Instructions">
-						<img src="../images/Tip_Customization.png" alt=""></a>
-					</div>
-				</div><!-- end row -->
+				<a class="button-circle button-circle-lg button-circle-dark button-circle-animation-drop lightbox-image" href="../images/bungee.gif" data-image-title="Roto Video">
+					<i class="fas fa-play"></i>
+				</a>
+				
 			</div><!-- end container -->
 		</div>
-		<!-- end About section -->
-		
-		
-		
-		
-		
-		
+		<!-- end Testimonial -->
 
-		
-		<!-- Prices section -->
-		<div class="section-lg bg-grey-lighter padding-top-0">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2 class="font-weight-normal">Buy Now</h2>
-					<div class="divider-zigzag divider-zigzag-color-black-07">
-						<span></span><span></span><span></span>
-					</div>
+
+
+		<!-- Installation -->
+		<div class="section bg-dark-lightest">
+		<div class="bg-dark-grey">
+		<div class="container">
+			<div class="product-info-box">
+				<h3 class="text-center">Installation</h3>
+				<div class="tab-pane fade show active" id="additional-info">
+					<a class="lightbox-image" href="../images/assemble4k.jpg" data-image-title="Roto Assembly Instructions">
+						<img src="../images/assemble.jpg" alt="">
+					</a>
+					<p class="margin-top-10">The Roto allows you a variety of setups to give you the best experience. Starting with the base, pick a spot for it that near the top of your mousepad. We suggest that it's placed no farther than one Roto Arm's length away from the top center of your mousepad. Once you've decided on a spot, remove the protective covering from the sticky gel. Once the covering is removed, be careful not to set the Roto on paper, as it will damage the gel. </p>
+					<p class="margin-top-10">Now wrap your mouse cord around the center with the cord entering through the south hole and exiting though the west hole (other orientations work too, just personal preference). Leave enough slack in the cable so that you can freely reach all four corners of you mousepad with your mouse. Once you have the cable wraped around the center of the tip, push the tip through the arm to secure. If your cable is too thick to wrap around the center, either pass the cable through the South and North holes or the West and North holes.  </p>
+					<p class="margin-top-10"> For a cable free look, take advanage of the cable routing in the back of the Roto. Remove the Roto's arm from the base, and place the cable in the grooving. <b>Leave some slack between the base and tip to ensure the Roto swings properly!</b> Press the cord firmly into the back channel to achieve the look. </p>
 				</div>
-				<div class="row col-spacing-40 ">
-					<!-- Prices box 1 -->
-					<div class="col-12 col-lg-4"></div>
-					<div class="col-12 col-lg-4">
-						<div class="prices-box no-border bg-dark-lighter box-shadow-with-hover border-radius hover-float">
-							<h5 class="font-weight-normal">Marble Grey Roto Bungee</h5>
-							<img src="../images/fusiondarkclose6.png" alt="">
-							<div >
-								<h1 class="font-weight-light">24.99$</h1>
-							</div>
-							<div class="price-features">
-								<p>- USA Free Shipping</p>
-								<p>-Includes Command Strip for Mounting</p>
-							</div>
-							<div>
-								<div id='product-component-1590115028757'></div>
-								<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'ryan-stinebaugh-designs.myshopify.com',
-      storefrontAccessToken: '25089c0685e682f8b89ada30f92e13f7',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '2208132989057',
-        node: document.getElementById('product-component-1590115028757'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        "background-color": "#ec2f2f",
-        ":focus": {
-          "background-color": "#d42a2a"
-        },
-        "border-radius": "5px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      }
-    },
-    "buttonDestination": "checkout",
-    "contents": {
-      "img": false,
-      "title": false,
-      "price": false
-    },
-    "text": {
-      "button": "Buy Now"
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        "background-color": "#ec2f2f",
-        ":focus": {
-          "background-color": "#d42a2a"
-        },
-        "border-radius": "5px",
-        "padding-left": "29px",
-        "padding-right": "29px"
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "cart": {
-    "styles": {
-      "button": {
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        "background-color": "#ec2f2f",
-        ":focus": {
-          "background-color": "#d42a2a"
-        },
-        "border-radius": "5px"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Checkout"
-    },
-    "popup": false
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#ec2f2f",
-        ":hover": {
-          "background-color": "#d42a2a"
-        },
-        ":focus": {
-          "background-color": "#d42a2a"
-        }
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-							</div>	
-						</div>
-					</div>
-					<div class="col-12 col-lg-4"></div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Prices section -->
+			</div>
+		</div><!-- end container -->
+	</div>
+</div>
 
-	
 
 		<footer>
 			<div class="section bg-dark">

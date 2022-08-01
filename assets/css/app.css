@@ -233,6 +233,10 @@
   color: rgba(255, 255, 255, 0.1);
 }
 
+.text-blue {
+  color: rgba(0, 0, 255, 0.9);
+}
+
 h1.text-white-09, h2.text-white-09, h3.text-white-09, h4.text-white-09, h5.text-white-09, h6.text-white-09 {
   color: rgba(255, 255, 255, 0.9);
 }
@@ -4604,7 +4608,7 @@ ol.list-ordered-style-5 li::before {
   background: #fff;
   min-width: 220px;
   border: none;
-  border-radius: 0;
+  border-radius: 10px;
   padding: 25px 0;
 }
 

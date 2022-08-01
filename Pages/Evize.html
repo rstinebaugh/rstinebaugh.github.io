@@ -30,57 +30,46 @@
 		
         <header>
 			<!-- navbar -->
-			<nav class="navbar navbar-dark"><!-- add 'navbar-dark/navbar-grey/navbar-transparent/navbar-transparent-dark' -->
-				<div class="container">
-					<a class="navbar-brand" href="../index.html">
-						<h5>Ryan Stinebaugh</h5>
-					</a>
-					<ul class="nav"><!-- add 'dropdown-dark/dropdown-grey/dropdown-transparent/dropdown-transparent-dark' -->
-						 
+            <nav class="navbar navbar-dark navbar-absolute navbar-fixed">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">
+                        <h5>Ryan Stinebaugh</h5>
+                    </a>
+                    <ul class="nav">                         
 
-						<!-- Sub Dropdown -->
-						<li class="nav-item nav-dropdown">
-							<a class="nav-link" href="../Pages/Portfolio.html">Portfolio</a>
-				        	<ul class="dropdown-menu">
-								<li class="sub-dropdown">
-									<a>Products</a>
-									<div class="sub-dropdown-menu">
-                                        <a href="../Pages/Keyboard.html">Piezoelectric Mechanical Keyboard</a>
-                                        <a href="../Pages/Autobiography.html">Digital Autobiography</a>
-                                        <a href="../Pages/Pass.html">Play at Safe Spaces</a>
-                                        <a href="../Pages/Gripper.html">Mechanical Gripper</a>
-										<a href="../Pages/Toaster.html">Toaster Redesign</a>
-                                        <a href="../Pages/Sleep.html">Teen Sleep Device</a>
-									</div>
-								</li>
-								<li class="sub-dropdown">
-									<a>Services</a>
-									<div class="sub-dropdown-menu">
-										<a href="../Pages/Evize.html">Evize</a>
-										<a href="../Pages/Gylty.html">Gylty</a>
-                                        <a href="../Pages/DraftKings.html">Draft Kings Ethnographic Study</a>
-									</div>
-								</li>
-							</ul>
-						</li>
-                        
-					
+                        <!-- Sub Dropdown -->
+                        <li class="nav-item nav-dropdown">
+                            <a class="nav-link">Portfolio</a>
+                    <ul class="dropdown-menu bg-dark">
+                                <li class="nav-item">
+                                    <a href="ProductDevelopment.html">Product Development</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="EngineeringDesign.html">Engineering Design</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="UI-UX.html">UI / UX</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <!-- Basic link -->
-						<li class="nav-item">
-							<a class="nav-link" href="../Pages/Contact.html">Contact</a>
-						</li>
-						
-					</ul><!-- end nav -->
-					<!-- Nav Toggle button -->
-					<button class="nav-toggle-btn">
-			            <span class="lines"></span>
-			        </button><!-- toggle button will show when screen resolution is less than 992px -->
-				</div><!-- end container -->
-			</nav><!-- end navbar -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                        
+                    </ul><!-- end nav -->
+                    <!-- Nav Toggle button -->
+                    <button class="nav-toggle-btn">
+                        <span class="lines"></span>
+                    </button><!-- toggle button will show when screen resolution is less than 992px -->
+                </div><!-- end container -->
+            </nav>
+            <!-- end navbar -->
 
 		</header>
         <!-- Title -->
-        <div class="section-xl bg-image parallax" style="background-image: url(../images/evize_header.png)">
+        <div class="section-xl bg-image parallax" data-bg-src="../images/evize_header.png">
             <div class="bg-black-06">
                 <div class="container text-center">
                     <h1 class="font-weight-light">Evize</h1>
@@ -95,7 +84,7 @@
 		<!-- end Scroll to top button -->
         
         <!-- Portfolio content -->
-		<div class="section ">
+		<div class="section bg-dark-lightest">
 			<div class="container">
                 <!-- Top Overview -->
 				<div class="margin-bottom-20">
@@ -211,7 +200,7 @@
                         </div>
                         <!-- Portfolio Content -->
                         <div class="col-12 col-lg-6">
-                            <div class="owl-carousel owl-nav-overlay margin-top-50 owl-dots-overlay margin-top-50" data-owl-items="1" data-owl-nav="true" data-owl-autoplay="true" autoplayHoverPause="true">
+                            <div class="owl-carousel owl-nav-overlay margin-top-50 owl-dots-overlay margin-top-50" data-owl-items="1" data-owl-nav="true" data-owl-autoplay="false">
                                 <div>
                                     <img src="../images/evize_whiteboard.png" alt="">
                                 </div>
@@ -240,7 +229,7 @@
                         </div>
                         <!-- Portfolio Content -->
                         <div class="col-12 col-lg-6">
-                            <div class="owl-carousel owl-nav-overlay owl-dots-overlay margin-top-50" data-owl-items="1" data-owl-nav="true" data-owl-autoplay="true" autoplayHoverPause="true">
+                            <div class="owl-carousel owl-nav-overlay owl-dots-overlay margin-top-50" data-owl-items="1" data-owl-nav="true" data-owl-autoplay="false">
                                 <div>
                                     <img src="../images/evize_accountsettings.png" alt="">
                                 </div>

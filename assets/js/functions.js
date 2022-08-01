@@ -45,6 +45,13 @@ $(function() {
     $body.append($("<div class='preloader preloader-11'><div><span class='spinner'><span></div></div>"));
   }
 
+/*===============================================
+  3. Background Image
+===============================================*/
+$(".bg-image").each(function() {
+  var bgData = $(this).attr("data-bg-src");
+  $(this).css('background-image', 'url(' +bgData+ ')');
+});
 
   /*===============================================
     Navbar Menu
